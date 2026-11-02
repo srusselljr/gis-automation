@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+# ArcGIS
+*.sde
+*.lock
+*.gdb/
+# Data - keep scripts public, not data
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+# OS
+Thumbs.db
+.DS_Store
