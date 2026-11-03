@@ -16,13 +16,19 @@ schedule so the working data stayed in sync with the authoritative SDE database.
 
 Deployed as four district-specific variants, one per sewer maintenance district.
 
+### `morehead.py`
+Walks the vertices of a rail corridor centerline and returns the bearing
+(azimuth from north), running station distance, and coordinates at each
+point along the line. Rebuilt from scratch after the prior GIS staffer's
+version left with him - a clean replacement for a tool the team relied on.
+
+Written for ArcGIS Pro (`arcpy`, Python 3).
 ## Notes
 
 - Written for ArcGIS Desktop (`arcpy`, Python 2.x) - the production environment of the era.
 - Database connection details live in ArcGIS `.sde` connection files, never in the scripts.
 - Internal server paths and connection names have been replaced with
   `<OUTPUT_PATH>` / `<OUTPUT_GDB>` placeholders.
-- More tools to follow (a railroad centerline coordinate generator).
 
 ## License
 
